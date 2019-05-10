@@ -8,7 +8,7 @@ const Cards = props => {
     <div className="cards-container">
       {
         props.cards.map(card => {
-        return <Card key={Date.now()} card={card}
+        return <Card key={card.headline} card={card}
         
          />})
          

@@ -46,12 +46,10 @@ export default class Content extends Component {
       return this.state.cards;
    }else{
       console.log(this.state.selected)
-       return this.state.cards.filter(card=>{
-        card.tab === this.state.selected
-               
-        
-       })
-        
+       return this.state.cards.filter(card=>(
+         card.tab === this.state.selected
+       )
+      )
       } 
    }
     
